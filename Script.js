@@ -24,8 +24,21 @@ function descuento(p){
         console.log("El cliente no tiene descuento");
     }
 
-}   
+}
 
 console.log(descuento(10))
+
+
+// Sin parámetros, sin retorno
+function mía(){
+    console.log("¡Hola! gente")
+}
+mía()
+
+//
+
+
+
+
 
 //Hecho por: María Lizarazo
