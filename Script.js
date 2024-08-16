@@ -27,3 +27,5 @@ function descuento(p){
 }   
 
 console.log(descuento(10))
+
+//Hecho por: María Lizarazo
