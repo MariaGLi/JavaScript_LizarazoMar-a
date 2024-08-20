@@ -26,7 +26,7 @@ function descuento(p){
 
 }
 
-console.log(descuento(10))
+console.log(descuento(2))
 
 
 // Sin parámetros, sin retorno
@@ -35,10 +35,25 @@ function mía(){
 }
 mía()
 
-//
+// Con parámetro, sin retorno
+function suma(a,b){
+    var sum= a+b
+    console.log("El resultado de la suma es: ", sum)
+}
+suma(5,2)
 
+// Con parámetro, con retorno
+function resta(c,d){
+    var restar= c-d
+    return restar
+}
+console.log("El resultado de la resta es: ", resta (10,7))
 
-
-
+// Sin parámetro, con retorno
+function multiplicación(){
+    let multiplicación= 9*3
+    return multiplicación
+}
+console.log("El resultado de la multiplicación es: ", multiplicación())
 
 //Hecho por: María Lizarazo
