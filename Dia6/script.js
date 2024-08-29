@@ -54,6 +54,51 @@ fetch("miJson.json")
     viewProducts()
 
 // Suppliers
+    var suppliers=data.suppliers    
+    var inf=document.getElementById("info2")
 
+    function viewSuppliers(){
+        inf.innerHTML=""
+        suppliers.forEach(sup => {
+            inf.innerHTML+=`
+            <p>id: ${sup.id}</p>
+            <p>name: ${sup.name}</p>
+            <p>contactInfo: {
+            <p>phone: ${sup.contactInfo.phone}</p>
+            <p>email: ${sup.contactInfo.email}</p>
+            <p>address: ${sup.contactInfo.address}</p> }</p>
+            <button id=date${sup.id}>Eliminar</button> 
+            `;
+            document.getElementById(`date${sup.id}`).addEventListener("click", (e)=>{
+                deleteSuppliers(sup.id)
+            })
+        });
+    }
+    
+    function deleteSuppliers(id){
+        suppliers=suppliers.filter(supplierNew => supplierNew.id !== id)
+        viewSuppliers()
+    }
+
+    document.getElementById("cont2").addEventListener("submit", function(event){
+        event.preventDefault();
+        
+        let supp=document.getElementById("caja").value;
+        let supp2=document.getElementById("caja2").value;
+        let supp3=document.getElementById("caja3").value;
+        let supp4=document.getElementById("caja4").value;
+        let supp5=document.getElementById("caja5").value;
+
+        products.push({
+            "id": supp,
+            "name": supp2,
+            "phone": supp3,
+            "email": supp4,
+            "address": supp5,
+        })
+        console.log(suppliers);
+        viewSuppliers()
+    });
+    viewSuppliers()
 
 })
