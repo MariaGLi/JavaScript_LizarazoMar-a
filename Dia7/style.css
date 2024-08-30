@@ -1,0 +1,17 @@
+img {
+    width: 17vw;
+    margin-top: 5vw;
+    margin-bottom: 3vw;
+    border-radius: 3vw;
+    border: 2px solid gray;
+    margin-left: 0vw;
+}
+
+#idecito{
+    margin-left: 15vw;
+    width: 30vw;
+    margin-top: 3vw;
+}
+#boton{
+    margin-left: 2vw;
+}
