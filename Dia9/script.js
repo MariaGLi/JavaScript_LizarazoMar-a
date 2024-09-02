@@ -1,6 +1,6 @@
 let url = `https://pokeapi.co/api/v2/pokemon/`;
 
-document.getElementById("holder").addEventListener('change',(e)=>{
+document.getElementById("holder").addEventListener('input',(e)=>{
     var search = document.getElementById("name").value;
     console.log(search);
     
