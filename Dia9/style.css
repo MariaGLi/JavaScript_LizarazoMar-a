@@ -64,3 +64,13 @@ body{
     box-shadow: -6px 5px 0px 0px rgba(25, 25, 25);
     border-radius: 0.5vw;
 }
+#idecito{
+    position: absolute;
+    top: 10em;
+    z-index: 2;
+}
+#nombre{
+    position: absolute;
+    top: 10em;
+    left: 2em;
+}
