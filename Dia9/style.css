@@ -6,7 +6,7 @@
 }
 
 body{
-    height: 100vh;
+    height: 100vw;
     background: linear-gradient(#6eb9f5, #ebf5fd);
     background-repeat: no-repeat;
     overflow: hidden;
@@ -17,11 +17,11 @@ body{
 
 .cont2{
     position: relative;
-    bottom: 28.7em;
+    bottom: 28.2em;
     left: 9em;
 }
 #gifs{
-    width: 8.5em;
+    width: 5.7em;
 }
 
 .botones{
