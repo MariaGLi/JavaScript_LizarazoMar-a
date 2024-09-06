@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: letrica;
+    src: url(./Imagenes/Letra/Gameplay.ttf);
+}
+body{
+    background-color: rgb(122, 113, 113);
+}
+#titulo{
+    font-family: letrica;
+    font-size: 3em;
+    text-align: center;
+}
+.caja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw; 
+    padding: 4vw;
+    flex-wrap: wrap;
+}
