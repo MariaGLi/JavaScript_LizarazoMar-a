@@ -8,21 +8,67 @@
     src: url(./Imagenes/Letra/Gameplay.ttf);
 }
 body{
-    background-color: rgb(122, 113, 113);
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, #2c5364, #0f2027);
 }
 #titulo{
     font-family: letrica;
     font-size: 3em;
     text-align: center;
+    margin-top: 1em;
+    transition: 1.5s;
+    cursor: pointer;
+}
+#titulo:hover{
+    transform: scale(1.1);
+    transition: 1.5s;
 }
 .caja{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2vw; 
     padding: 4vw;
     flex-wrap: wrap;
+    gap: 30px;
 }
 #SupHer{
-    width: 10em;
+    width: 16em;
+    transition: 1.5s;
+    box-shadow: 4px 5px 6px rgba(24, 24, 226, 0.42);
+    border-radius: 50px;
+}
+#SupHer:hover{
+    transform: scale(1.1);
+    transition: 1.5s;
+}
+#PokeAPI{
+    width: 20em;
+    transition: 1.5s;
+    box-shadow: 4px 5px 6px rgba(255, 153, 0, 0.344);
+    border-radius: 50px;
+}
+#PokeAPI:hover{
+    transform: scale(1.1);
+    transition: 1.5s;
+}
+#RickAndMorty{
+    width: 19.8em;
+    transition: 1.5s;
+    box-shadow: 4px 5px 6px rgba(0, 255, 21, 0.327);
+    border-radius: 50px;
+}
+#RickAndMorty:hover{
+    transform: scale(1.1);
+    transition: 1.5s;
+}
+#Usuarios{
+    width: 27em;
+    transition: 1.5s;
+    box-shadow: 4px 5px 6px rgba(138, 137, 136, 0.491);
+    border-radius: 50px;
+}
+#Usuarios:hover{
+    transform: scale(1.1);
+    transition: 1.5s;
 }
