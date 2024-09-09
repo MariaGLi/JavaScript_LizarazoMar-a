@@ -53,6 +53,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
         document.querySelectorAll('.completado').forEach(button=>{
             button.addEventListener('click', botoncompletado);
         });
+        document.querySelectorAll('.eliminado').forEach(button=>{
+            button.addEventListener('click', twoBoton);
+        });
     }
     async function addNewTask() {
         const task = taskInput.value;
@@ -75,9 +78,23 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     async function botoncompletado(event) {
         const id = event.target.getAttribute('data-id');
-        console.log("hola")
         await fetch(`https://6674179975872d0e0a950e53.mockapi.io/todoList/${id}`,{
             method: 'PUT',
+            headers: {
+                'Content-Type' : 'application/json',
+            },
+            body:JSON.stringify({status:'ready'})
+            
+        });
+        const data = await fetchData();
+        displayCapsula(data)
+    }
+
+    async function twoBoton(event) {
+        const id = event.target.getAttribute('data-id');
+        console.log("hola")
+        await fetch(`https://6674179975872d0e0a950e53.mockapi.io/todoList/${id}`,{
+            method: 'DELETE',
             headers: {
                 'Content-Type' : 'application/json',
             },
