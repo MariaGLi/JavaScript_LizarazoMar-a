@@ -16,3 +16,18 @@ document.getElementById("holder").addEventListener('input',(e)=>{
     });
 });
 
+/*class Caja extends HTMLElement{
+    constructor(){
+        super();
+        this.innerHTML=`
+        <div class="caja">
+            <h2>Live User Filter</h2>
+            <p>Search by name and/or location</p>
+            <input id="search" type="text" placeholder="Search">
+        </div>
+        <div id="caja2">
+        </div>
+        `
+    }
+}
+customElements.define('boton-shadow', Caja)*/
